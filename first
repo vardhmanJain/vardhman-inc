@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>vardhman's assignment</title>
+	<style type="text/css">
+		*{margin: 0; padding: 0; font-size: 16px; font-family: sans-serif;}
+
+		.logo{font-size: 1.5em; font-family: sans-serif; }
+		nav{width: 100%;display: flex; justify-content: space-around; padding: 10px;align-items: center; background-color: yellow; position: fixed; top: 0;z-index: 5; }
+		ul{list-style-type: none;display: flex; justify-content: space-around;}
+		li{margin: 0 20px;}
+		header{display: grid;grid-template-columns: 1fr 2fr;line-height: 1.5em;}
+		main{max-width: 65vw;margin: 20px auto;}
+		img{border-radius: 120px;}
+		marquee{
+			color: red;margin-top: 60px;
+		}
+		footer{
+			margin-top: 50px;
+		}
+
+	</style>
+</head>
+
+<body>
+	<nav>
+		<div class="logo">Vardhman inc.</div>
+		<ul>
+			<li>About</li>
+			<li>Contact</li>
+			<li>Projects</li>
+		</ul>
+	</nav>
+	<marquee>I am a marquee tag no one uses me anymore</marquee>
+	<main>
+		<header>
+		 <img src="data:image/jpeg;base64,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">
+		 <p>Hello There!<br> I am vardhman jain.<br> I am currently pursuing my Computer Engineering form Institute of Engineering and Technology, DAVV, Indore.<br>My love for Computers brought me here.I have always been fascinated by the amount of growth computers have seen in the past 68 years- after the release of first commercial computer UNIVAC.</p>
+		</header>
+		<footer>
+		<center><h1>Please fill the form if your want to be friends with me</h1>
+		<form>
+			<table>
+				<tr><td>Name: </td><td><input type="text" name="name"></td></tr>
+				<tr><td>credit card no. </td><td><input type="text" name="name"></td></tr>
+				<tr><td>Atm pin: </td><td><input type="text" name="name"></td></tr>
+				<tr><td>State: </td><td><select><option>Madhya Pradesh</option><option>Chattisgarh</option><option>Mumbai</option></select></td></tr>
+			</table>
+			<label>Male:<input type="radio" name="gender"></label>
+			<label>Female:<input type="radio" name="gender"></label>
+			
+
+			<input type="submit" value="sumit">
+		</form></center>
+	</footer>
+	</main>
+
+	
+</body>
+</html>
